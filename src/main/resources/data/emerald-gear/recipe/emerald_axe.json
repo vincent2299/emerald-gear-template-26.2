@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "EE ",
+    "ES ",
+    " S "
+  ],
+  "key": {
+    "E": "minecraft:emerald",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "emerald-gear:emerald_axe",
+    "count": 1
+  }
+}
