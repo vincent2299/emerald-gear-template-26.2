@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "emerald-gear",
+	"version": "${version}",
+	"name": "Emerald Gear",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/emerald-gear/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.vincent.emeraldgear.EmeraldGear"
+		],
+		"client": [
+			"com.vincent.emeraldgear.client.EmeraldGearClient"
+		]
+	},
+	"mixins": [
+		"emerald-gear.mixins.json",
+		{
+			"config": "emerald-gear.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
